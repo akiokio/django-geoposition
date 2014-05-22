@@ -37,6 +37,7 @@
 .geoposition-search {
     float: right;
     text-align: left;
+    padding-top: 30px;
 }
 
 .geoposition-results {
