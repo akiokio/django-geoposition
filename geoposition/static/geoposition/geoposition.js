@@ -76,6 +76,16 @@ if (jQuery != undefined) {
                 });
             }
 
+            function fillAddress(address){
+                // console.log(address);
+                $('#id_street').val(address.address_components[1].long_name);
+                $('#id_number').val(address.address_components[0].long_name);
+                $('#id_neiborhood').val(address.address_components[2].long_name);
+                $('#id_city').val(address.address_components[4].long_name);
+                $('#id_state').val(address.address_components[5].short_name);
+                $('#id_cep').val(address.address_components[7].long_name);
+            }
+
             function doGeocode() {
                 var gc = new google.maps.Geocoder();
                 gc.geocode({
@@ -83,7 +93,8 @@ if (jQuery != undefined) {
                 }, function(results, status) {
                     $addressRow.text('');
                     if (results && results[0]) {
-                        $addressRow.text(results[0].formatted_address);
+                        // $addressRow.text(results[0].formatted_address);
+                        fillAddress(results[0]);
                     }
                 });
             }
