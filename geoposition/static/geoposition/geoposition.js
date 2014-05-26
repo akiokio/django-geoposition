@@ -78,12 +78,28 @@ if (jQuery != undefined) {
 
             function fillAddress(address){
                 // console.log(address);
-                $('#id_street').val(address.address_components[1].long_name);
-                $('#id_number').val(address.address_components[0].long_name);
-                $('#id_neiborhood').val(address.address_components[2].long_name);
-                $('#id_city').val(address.address_components[4].long_name);
-                $('#id_state').val(address.address_components[5].short_name);
-                $('#id_cep').val(address.address_components[7].long_name);
+
+                if($('#id_street') ==  ''){
+                    $('#id_street').val(address.address_components[1].long_name);
+                }
+                if($('#id_number') ==  ''){
+                    // $('#id_number').val(address.address_components[0].long_name);
+                }
+                if($('#id_neiborhood') ==  ''){
+                    $('#id_neiborhood').val(address.address_components[2].long_name);
+                }
+                if($('#id_city') ==  ''){
+                    $('#id_city').val(address.address_components[4].long_name);
+                }
+                if($('#id_state') ==  ''){
+                    $('#id_state').val(address.address_components[5].short_name);
+                }
+                if($('#id_cep') ==  ''){
+                    $('#id_cep').val(address.address_components[7].long_name);
+                }
+                if($('#id_country') ==  ''){
+                    $('#id_country').val(address.address_components[6].long_name);
+                }
             }
 
             function doGeocode() {
