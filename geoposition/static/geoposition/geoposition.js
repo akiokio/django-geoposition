@@ -79,25 +79,25 @@ if (jQuery != undefined) {
             function fillAddress(address){
                 // console.log(address);
 
-                if($('#id_street') ==  ''){
+                if($('#id_street').val() ==  ''){
                     $('#id_street').val(address.address_components[1].long_name);
                 }
-                if($('#id_number') ==  ''){
+                if($('#id_number').val() ==  ''){
                     // $('#id_number').val(address.address_components[0].long_name);
                 }
-                if($('#id_neiborhood') ==  ''){
+                if($('#id_neiborhood').val() ==  ''){
                     $('#id_neiborhood').val(address.address_components[2].long_name);
                 }
-                if($('#id_city') ==  ''){
+                if($('#id_city').val() ==  ''){
                     $('#id_city').val(address.address_components[4].long_name);
                 }
-                if($('#id_state') ==  ''){
+                if($('#id_state').val() ==  ''){
                     $('#id_state').val(address.address_components[5].short_name);
                 }
-                if($('#id_cep') ==  ''){
+                if($('#id_cep').val() ==  ''){
                     $('#id_cep').val(address.address_components[7].long_name);
                 }
-                if($('#id_country') ==  ''){
+                if($('#id_country').val() ==  ''){
                     $('#id_country').val(address.address_components[6].long_name);
                 }
             }
