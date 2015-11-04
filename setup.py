@@ -1,12 +1,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='django-geoposition',
+    name='akiokio-django-geoposition',
     version=__import__('geoposition').__version__,
     description='Django model field that can hold a geoposition, and corresponding admin widget.',
-    author='Philipp Bosch',
-    author_email='hello@pb.io',
-    url='http://github.com/philippbosch/django-geoposition',
+    author='akiokio',
+    author_email='akio.xd@gmail.com',
+    url='http://github.com/akiokio/django-geoposition',
+    download_url='https://github.com/akiokio/django-geoposition/tarbal/0.2.1',
     packages=find_packages(),
     zip_safe=False,
     package_data={
