@@ -7,7 +7,7 @@ setup(
     author='akiokio',
     author_email='akio.xd@gmail.com',
     url='http://github.com/akiokio/django-geoposition',
-    download_url='https://github.com/akiokio/django-geoposition/tarbal/0.2.1',
+    download_url='https://github.com/akiokio/django-geoposition/tarbal/0.2.2',
     packages=find_packages(),
     zip_safe=False,
     package_data={
