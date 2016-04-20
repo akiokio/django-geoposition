@@ -26,5 +26,5 @@ setup(
       'Programming Language :: Python',
       'Framework :: Django',
     ],
-    install_requires=['django-appconf >= 0.4'],
+    install_requires=['django-appconf >= 1.0.2'],
 )
